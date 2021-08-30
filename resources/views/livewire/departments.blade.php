@@ -26,8 +26,12 @@
                           <p>Jackline Mae</p>
                         </td>
                         <td class="align-middle">
-                          <a class="btn btn-link text-secondary pe-3 ps-0 mb-0 ms-auto" href="javascript:;">Edit</a>
-                          <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto" href="javascript:;">Delete</a>
+                          <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit department">
+                              <i class="fas fa-user-edit text-secondary"></i>
+                          </a>
+                          <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Delete department">
+                              <i class="cursor-pointer fas fa-trash text-danger"></i>
+                          </a>
                         </td>
                       </tr>
                       <tr>

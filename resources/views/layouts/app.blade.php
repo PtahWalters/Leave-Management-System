@@ -1,13 +1,7 @@
 <x-layouts.base>
     {{-- If the user is authenticated --}}
     @auth()
-        {{-- If the user is authenticated on the static sign up or the sign up page --}}
-        @if (in_array(request()->route()->getName(),['static-sign-up', 'sign-up'],))
-            @include('layouts.navbars.guest.sign-up')
-            {{ $slot }}
-            @include('layouts.footers.guest.with-socials')
-            {{-- If the user is authenticated on the static sign in or the login page --}}
-        @elseif (in_array(request()->route()->getName(),['sign-in', 'login'],))
+        @if (in_array(request()->route()->getName(),['sign-in', 'login'],))
             @include('layouts.navbars.guest.login')
             {{ $slot }}
             @include('layouts.footers.guest.description')

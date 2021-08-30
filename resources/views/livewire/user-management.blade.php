@@ -62,13 +62,12 @@
                                         <span class="text-secondary text-xs font-weight-bold">16/06/18</span>
                                     </td>
                                     <td class="text-center">
-                                        <a href="#" class="mx-3" data-bs-toggle="tooltip"
-                                            data-bs-original-title="Edit user">
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit user">
                                             <i class="fas fa-user-edit text-secondary"></i>
                                         </a>
-                                        <span>
-                                            <i class="cursor-pointer fas fa-trash text-secondary"></i>
-                                        </span>
+                                        <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Delete user">
+                                            <i class="cursor-pointer fas fa-trash text-danger"></i>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>

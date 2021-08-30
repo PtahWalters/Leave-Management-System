@@ -12,7 +12,7 @@ class Organizations extends Component
     public $showSuccesNotification  = false;
     
     protected $rules = [
-        'organization.name' => 'max:40|min:3',
+        'organization.name' => 'required|max:40|min:3',
         'organization.logo' => 'required',
         'organization.country' => 'required',
         'organization.week' => 'required',

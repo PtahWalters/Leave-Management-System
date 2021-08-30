@@ -7,7 +7,7 @@ use App\Http\Livewire\Auth\ResetPassword;
 use App\Http\Livewire\Auth\SignUp;
 use App\Http\Livewire\Auth\Login;
 
-use App\Http\Livewire\Organization;
+use App\Http\Livewire\Organizations;
 use App\Http\Livewire\Departments;
 use App\Http\Livewire\Newdepartment;
 use App\Http\Livewire\Dashboard;
@@ -46,7 +46,7 @@ Route::get('/reset-password/{id}',ResetPassword::class)->name('reset-password')-
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
-    Route::get('/organization', Organization::class)->name('organization');
+    Route::get('/organization', Organizations::class)->name('organization');
     Route::get('/departments', Departments::class)->name('departments');
     Route::get('/new-department', Newdepartment::class)->name('create-department');
     Route::get('/holidays', Holidays::class)->name('holidays');
@@ -54,9 +54,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/leaves', Leaves::class)->name('leave-types');
     Route::get('/new-leave', Newleave::class)->name('create-leave');
     Route::get('/user-management', UserManagement::class)->name('user-management');
-
-    Route::get('/static-sign-in', StaticSignIn::class)->name('sign-in');
-    Route::get('/static-sign-up', StaticSignUp::class)->name('static-sign-up');
     Route::get('/laravel-user-profile', UserProfile::class)->name('user-profile');
     
 });

@@ -22,8 +22,12 @@
                           <p>{{ $leave->days }}</p>
                         </td>
                         <td class="align-middle">
-                          <a class="btn btn-link text-secondary pe-3 ps-0 mb-0 ms-auto" wire:click="edit({{ $leave->id }})">Edit</a>
-                          <a class="btn btn-link pe-3 ps-0 mb-0 ms-auto" wire:click="delete({{ $leave->id }})">Delete</a>
+                          <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit department" wire:click="edit({{ $leave->id }})">
+                            <i class="fas fa-user-edit text-secondary"></i>
+                          </a>
+                          <a href="#" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Delete department"  wire:click="delete({{ $leave->id }})">
+                              <i class="cursor-pointer fas fa-trash text-danger"></i>
+                          </a>
                         </td>
                       </tr>
                   @endforeach
